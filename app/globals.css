@@ -3,9 +3,7 @@
 @tailwind utilities;
 
 :root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+ 
 }
 
 @media (prefers-color-scheme: dark) {
@@ -18,16 +16,30 @@
 
 body {
   color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+  background: white;
+  color: black;
 }
 .bg {
   background-image: url("bg2.jpg");
   background-position: center;
   background-size: cover;
   border-block: 10px solid #FFFB1F;
+}
+.hero {
+  background-image: url("bg.jpg");
+  background-position: top;
+  background-size: cover ;
+  background-repeat: no-repeat;
+}
+input:focus {
+  outline: none;
+}
+.card{
+  @apply text-center flex flex-col justify-between w-full min-h-full gap-2 cursor-pointer backdrop-blur-0 shadow-xl p-1 bg-black text-white rounded-sm;
+}
+.card:hover{
+  @apply text-center flex flex-col w-full gap-2 backdrop-blur-0 duration-200 shadow-xl p-1 bg-[#FFFB1F] text-black rounded-sm;
+}
+.card:hover .author{
+  @apply text-black;
 }
