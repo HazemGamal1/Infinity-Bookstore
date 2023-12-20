@@ -25,3 +25,9 @@ body {
     )
     rgb(var(--background-start-rgb));
 }
+.bg {
+  background-image: url("bg2.jpg");
+  background-position: center;
+  background-size: cover;
+  border-block: 10px solid #FFFB1F;
+}
