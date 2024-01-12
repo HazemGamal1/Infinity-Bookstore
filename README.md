@@ -47,3 +47,5 @@ Still working on the API locally once I deploy it I will put the info.
 
 ![Logo](https://i.ibb.co/jTZhxMJ/hero.png")
 
+![screenshot](https://i.ibb.co/PZhVZLq/Screenshot-2024-01-12-154522.png)
+

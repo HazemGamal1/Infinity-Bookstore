@@ -44,7 +44,6 @@ const page = () => {
           <img src="/404.png" alt="" className='w-[200px] lg:w-[500px] mx-auto'/>
           <h1 className='text-3xl'>{error}</h1>
           <h3>Something went wrong</h3>
-          <h3>OPEN THE API</h3>
         </div>
       )}
       {data && (
