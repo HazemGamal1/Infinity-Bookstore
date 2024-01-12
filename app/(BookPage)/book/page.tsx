@@ -1,13 +1,9 @@
 'use client'
-import Card from '@/app/components/Card'
 import Navbar from '@/app/components/Navbar'
-import Offer from '@/app/components/Offer'
 import React, { useState } from 'react'
 import { IoHeart } from "react-icons/io5";
 import CardVariation from '@/app/components/CardVariation';
 import { FaShoppingCart } from "react-icons/fa";
-import { IoMdCheckmarkCircle } from "react-icons/io";
-import Footer from '@/app/components/Footer';
 import { MdSell } from "react-icons/md";
 
 interface propTypes{
@@ -48,7 +44,6 @@ const page = (props : propTypes) => {
                     <IoHeart className="text-xl text-rose-500"/>
                 </div>
             )}
-        {/* <Footer /> */}
     </div>
   )
 }
