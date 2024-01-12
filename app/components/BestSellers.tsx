@@ -42,8 +42,8 @@ const BestSellers = () => {
         price: 200
       },
       {
-        name: "Menewood",
-        image: "/menewood.webp",
+        name: "It Ends With Us",
+        image: "/bookCovers/itEndsWithUs.jpg",
         type: "novel",
         rating: 3.5,
         price: 200
