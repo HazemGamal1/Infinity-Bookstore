@@ -3,7 +3,9 @@
 @tailwind utilities;
 
 :root {
- 
+ --main-color: #FEEE00;
+ /* --main-color: #663EDB; */
+ --hover-color: #4040FF;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -13,20 +15,28 @@
     --background-end-rgb: 0, 0, 0;
   }
 }
+input:focus {
+  @apply bg-slate-100 text-black border-0;
+}
 
 body {
   color: rgb(var(--foreground-rgb));
-  background: white;
+  background: #F7F7FA;
   color: black;
+  /* background: #101115; */
+}
+.main-bg{
+  background-color: var(--main-color);
 }
 .bg {
-  background-image: url("bg2.jpg");
+  /* background-image: url("bg2.jpg"); */
   background-position: center;
   background-size: cover;
-  border-block: 10px solid #FFFB1F;
+  border-block: 10px solid var(--main-color);
 }
-.hero {
-  background-image: url("bg.jpg");
+.hero { 
+  background-image: url("../public/bg.png");
+  /* background-color: black; */
   background-position: top;
   background-size: cover ;
   background-repeat: no-repeat;
@@ -34,12 +44,18 @@ body {
 input:focus {
   outline: none;
 }
+.footer-icon{
+  @apply text-xl cursor-pointer hover:text-hover-color duration-300;
+}
 .card{
-  @apply text-center flex flex-col justify-between w-full min-h-full gap-2 cursor-pointer backdrop-blur-0 shadow-xl p-1 bg-black text-white rounded-sm;
+  @apply flex flex-col justify-between w-full min-h-full gap-2 pt-0.5  cursor-pointer backdrop-blur-0 shadow-xl  text-white rounded-xl;
 }
 .card:hover{
-  @apply text-center flex flex-col w-full gap-2 backdrop-blur-0 duration-200 shadow-xl p-1 bg-[#FFFB1F] text-black rounded-sm;
+  /* background-color: var(--main-color); */ 
+  /* scale: 1.1; */
+  opacity: 95%;
+  @apply flex flex-col w-full gap-2 backdrop-blur-0 duration-300 shadow-xl pt-0.5 rounded-xl transition-all;
 }
 .card:hover .author{
-  @apply text-black;
+  /* @apply text-black; */
 }
