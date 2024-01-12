@@ -10,7 +10,7 @@ Infinity books is a web store for buying books , you can search and navigate thr
 Clone the project
 
 ```bash
-  git clone https://link-to-project
+  git clone https://github.com/HazemGamal1/Infinity-Bookstore
 ```
 
 Go to the project directory
