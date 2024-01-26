@@ -39,8 +39,8 @@ const Hero = () => {
   };
 
   return (
-    <div className='h-[70vh] flex flex-col text-white'>
-          <div className='hero w-full h-full flex flex-col justify-center'>
+    <div className='flex flex-col text-white'>
+          <div className='hero w-full h-full flex flex-col justify-center py-36'>
             <div className="w-full grid place-content-center">
               <h1 className='font-bold text-3xl drop-shadow-md text-white md:text-4xl lg:text-7xl select-none uppercase mb-6 opacity-95'><Image src={logotext} alt='logo' width={500}/></h1>
             </div>

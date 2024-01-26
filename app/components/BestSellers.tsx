@@ -52,7 +52,7 @@ const BestSellers = () => {
   )
   return (
     <div>
-        <div className='w-full text-center bg-slate-100'>
+        <div className='w-full text-center '>
         <h1 className='font-bold mb-3 lg:text-3xl'>Best Sellers</h1>
         </div>
         <div className='grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-6 gap-4 lg:max-w-screen-2xl p-4 mx-auto'>

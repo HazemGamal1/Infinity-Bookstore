@@ -17,7 +17,7 @@ const Card = (props: PropTypes) => {
     const [showInfo, setShowInfo] = useState(false);
   return (
     <div>
-        <div className='grid place-content-center relative rounded-lg overflow-hidden ' onMouseEnter={() => setShowInfo(true)} onMouseLeave={() => setShowInfo(false)}>
+        <div className='grid place-content-center relative rounded-lg cursor-pointer overflow-hidden ' onMouseEnter={() => setShowInfo(true)} onMouseLeave={() => setShowInfo(false)}>
             <Image src={menewood} alt="book cover"  width={450} height={350} quality={100}/>
         </div>
     </div>
