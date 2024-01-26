@@ -4,6 +4,7 @@ import menewood from '@/app/menewood.webp';
 
 import Verity from '@/app/verity.jpg';
 import book from '@/app/uglyLov.jpg';
+import book2 from '@/public/bookCovers/ironFlame.jpg';
 
 import { IoHeart } from "react-icons/io5";
 import { FaStar } from "react-icons/fa";
@@ -18,7 +19,7 @@ const Card = (props: PropTypes) => {
   return (
     <div>
         <div className='grid place-content-center relative rounded-lg cursor-pointer overflow-hidden ' onMouseEnter={() => setShowInfo(true)} onMouseLeave={() => setShowInfo(false)}>
-            <Image src={menewood} alt="book cover"  width={450} height={350} quality={100}/>
+            <Image src={book2} alt="book cover"  width={450} height={350} quality={100}/>
         </div>
     </div>
   )

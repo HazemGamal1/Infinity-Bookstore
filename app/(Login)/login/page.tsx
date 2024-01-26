@@ -3,7 +3,7 @@ import logo from '@/app/logo black.png'
 import Image from 'next/image'
 import Link from 'next/link'
 
-const page = () => {
+const Page = () => {
   return (
     <div className='grid w-screen h-screen place-content-center'>
       <Link href="/">
@@ -33,4 +33,4 @@ const page = () => {
   )
 }
 
-export default page
+export default Page

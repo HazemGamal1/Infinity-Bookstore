@@ -1,8 +1,7 @@
 "use client"
 import React from 'react'
 import Navbar from '../../components/Navbar'
-import { FaFilter } from "react-icons/fa";
-import { IoIosArrowForward } from "react-icons/io";
+import { IoIosArrowForward, IoMdAdd } from "react-icons/io";
 import FilterChoice from './components/FilterChoice';
 import Card from '@/app/components/CardVariation';
 import { GiSettingsKnobs } from "react-icons/gi";
@@ -10,8 +9,9 @@ import Footer from '@/app/components/Footer';
 import { useState } from 'react';
 import { MdOutlineKeyboardArrowDown } from "react-icons/md";
 
-const page = () => {
+const Page = () => {
   const [showFilter , setShowFilter] = useState(true);
+  const [showCategories, setShowCategories] = useState(false);
   return (
     <div>
       <Navbar />
@@ -36,15 +36,18 @@ const page = () => {
                   <p className='text-sm flex gap-2 items-center cursor-pointer  text-hover-color underline underline-offset-2'>Reset filter</p>
                 </div>
                 <div className='flex justify-between py-2'>
-                  <p className='font-semibold'>Shop By Category</p>
+                  <p className='font-semibold flex justify-between items-center  w-full cursor-pointer hover:text-hover-color' onClick={()=> setShowCategories(!showCategories)}>Shop By Category <IoMdAdd className="text-xl"/> </p>
                 </div>
-                <div className='flex flex-col gap-6 justify-between py-2'>
-                  <FilterChoice categoryName='Arts & Music'/>
-                  <FilterChoice categoryName='Biographies'/>
-                  <FilterChoice categoryName='Business'/>
-                  <FilterChoice categoryName='Comics'/>
-                  <FilterChoice categoryName='Manga'/>
-                </div>
+                {
+                  showCategories &&
+                  <div className='flex flex-col gap-6 justify-between py-2 ml-2'>
+                    <FilterChoice categoryName='Arts & Music'/>
+                    <FilterChoice categoryName='Biographies'/>
+                    <FilterChoice categoryName='Business'/>
+                    <FilterChoice categoryName='Comics'/>
+                    <FilterChoice categoryName='Manga'/>
+                  </div>
+                }
                 <div>
                   <div className='mt-6'>
                     <p className='font-semibold'>Price</p>
@@ -68,16 +71,6 @@ const page = () => {
                 <Card picture='somepic'/>
                 <Card picture='somepic'/>
                 <Card picture='somepic'/>
-                <Card picture='somepic'/>
-                <Card picture='somepic'/>
-                <Card picture='somepic'/>
-                <Card picture='somepic'/>
-                <Card picture='somepic'/>
-                <Card picture='somepic'/>
-                <Card picture='somepic'/>
-                <Card picture='somepic'/>
-                <Card picture='somepic'/>
-                <Card picture='somepic'/>
               </div>
             </div>
           </div>
@@ -88,4 +81,4 @@ const page = () => {
   )
 }
 
-export default page
+export default Page

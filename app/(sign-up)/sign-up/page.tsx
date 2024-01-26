@@ -2,7 +2,7 @@ import React from 'react'
 import logo from '@/app/logo black.png'
 import Link from 'next/link'
 import Image from 'next/image'
-const page = () => {
+const Page = () => {
   return (
     <div className='grid w-screen h-screen place-content-center'>
     <Link href="/">
@@ -40,4 +40,4 @@ const page = () => {
   )
 }
 
-export default page
+export default Page

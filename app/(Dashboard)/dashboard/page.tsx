@@ -13,7 +13,7 @@ import { MdSell } from "react-icons/md";
 import err from '/404.png'
 import AddBook from './components/AddBook';
 import RemoveBook from './components/RemoveBook';
-const page = () => {
+const Page = () => {
     const [data, setData] = useState(null);
     const [show, setShow] = useState(false);
     const [author, setAuthor] = useState("");
@@ -62,4 +62,4 @@ const page = () => {
   )
 }
 
-export default page
+export default Page

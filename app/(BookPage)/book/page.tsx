@@ -10,7 +10,7 @@ interface propTypes{
     title: string,
     image: string
 }
-const page = (props : propTypes) => {
+const Page = (props : propTypes) => {
     const[wishList, setWishList] = useState(false);
   return (
     <div className='relative h-full'>
@@ -22,7 +22,7 @@ const page = (props : propTypes) => {
                         <div className='bg-hover-color text-white rounded-2xl p-2 mt-4 flex items-center gap-2 cursor-pointer select-none max-w-max' onClick={() => setWishList(!wishList)}>
                             <IoHeart className={`text-xl ${wishList ? "text-rose-500" : null}`}/> Wishlist
                         </div>
-                        <h1 className='mt-4 font-extrabold text-4xl lg:text-6xl'>Menewood</h1>
+                        <h1 className='mt-4 font-extrabold text-4xl lg:text-6xl'>Iron Flame</h1>
                         <p className='bg-main-color mt-4 font-bold rounded-md text-sm max-w-max py-1 px-2'>Novel</p>
                         <p className='mt-4 font-bold rounded-md text-sm max-w-max py-1 text-slate-500'>Fiction/Historic</p>
                     </div>
@@ -48,4 +48,4 @@ const page = (props : propTypes) => {
   )
 }
 
-export default page
+export default Page

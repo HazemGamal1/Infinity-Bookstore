@@ -7,7 +7,7 @@ interface IProps {
 const FilterChoice = (props : IProps) => {
   return (
     <div className='flex justify-between border-b-2 border-[#7f7f7f0e] py-2 cursor-pointer'>
-        <p>{props.categoryName}</p>
+        <p className='select-none'>{props.categoryName}</p>
         <IoIosArrowForward/>
     </div>
   )
