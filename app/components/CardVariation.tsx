@@ -1,5 +1,5 @@
 "use client"
-import Image from 'next/image'
+import Image, { StaticImageData } from 'next/image'
 import menewood from '@/app/menewood.webp';
 
 import Verity from '@/app/verity.jpg';
@@ -12,14 +12,14 @@ import { IoCart } from "react-icons/io5";
 import { useState } from 'react';
 
 interface PropTypes{
-  picture: string
+  picture: StaticImageData
 }
 const Card = (props: PropTypes) => {
     const [showInfo, setShowInfo] = useState(false);
   return (
     <div>
         <div className='grid place-content-center relative rounded-lg cursor-pointer overflow-hidden ' onMouseEnter={() => setShowInfo(true)} onMouseLeave={() => setShowInfo(false)}>
-            <Image src={book2} alt="book cover"  width={450} height={350} quality={100}/>
+            <Image src={Verity} alt="book cover"  width={450} height={350} quality={100}/>
         </div>
     </div>
   )

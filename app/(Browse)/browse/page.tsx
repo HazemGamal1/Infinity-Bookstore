@@ -8,10 +8,13 @@ import { GiSettingsKnobs } from "react-icons/gi";
 import Footer from '@/app/components/Footer';
 import { useState } from 'react';
 import { MdOutlineKeyboardArrowDown } from "react-icons/md";
-
+import { FaMinus } from "react-icons/fa6";
+import menewood from '@/app/menewood.webp';
+import king from '@/public/bookCovers/king.webp';
 const Page = () => {
   const [showFilter , setShowFilter] = useState(true);
   const [showCategories, setShowCategories] = useState(false);
+  const [showComics, setShowComics] = useState(false);
   return (
     <div>
       <Navbar />
@@ -36,7 +39,7 @@ const Page = () => {
                   <p className='text-sm flex gap-2 items-center cursor-pointer  text-hover-color underline underline-offset-2'>Reset filter</p>
                 </div>
                 <div className='flex justify-between py-2'>
-                  <p className='font-semibold flex justify-between items-center  w-full cursor-pointer hover:text-hover-color' onClick={()=> setShowCategories(!showCategories)}>Shop By Category <IoMdAdd className="text-xl"/> </p>
+                  <p className='font-semibold flex justify-between items-center  w-full cursor-pointer hover:text-hover-color' onClick={()=> setShowCategories(!showCategories)}>Shop By Category {showCategories ? <FaMinus className="text-xl"/> : <IoMdAdd className="text-xl"/>}</p>
                 </div>
                 {
                   showCategories &&
@@ -44,13 +47,29 @@ const Page = () => {
                     <FilterChoice categoryName='Arts & Music'/>
                     <FilterChoice categoryName='Biographies'/>
                     <FilterChoice categoryName='Business'/>
-                    <FilterChoice categoryName='Comics'/>
+                    <button onClick={() => setShowComics(!showComics)}><FilterChoice categoryName='Comics'/></button>
+                    {
+                      showComics && 
+                        <div className='flex flex-col gap-4 ml-2'>
+                          <a className='cursor-pointer'>Marvel Comics</a>
+                          <a className='cursor-pointer'>DC Comics</a>
+                        </div>
+                    }
                     <FilterChoice categoryName='Manga'/>
                   </div>
                 }
+                {/* Prices */}
                 <div>
                   <div className='mt-6'>
-                    <p className='font-semibold'>Price</p>
+                    <p className='font-semibold mb-2'>Price</p>
+                    <div className='relative w-full bg-black h-1 rounded-lg'>
+                      <div className='absolute bg-hover-color w-6 h-1'>
+                      </div>
+                    </div>
+                    <div className='flex justify-between items-center mt-2'>
+                      <p>0 EGP</p>
+                      <p>500 EGP</p>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -58,19 +77,19 @@ const Page = () => {
         }
             <div className='2xl:w-full'>
               <div className='w-full grid grid-cols-2 md:grid-cols-3 2xl:grid-cols-5 gap-4'>
-                <Card picture='somepic'/>
-                <Card picture='somepic'/>
-                <Card picture='somepic'/>
-                <Card picture='somepic'/>
-                <Card picture='somepic'/>
-                <Card picture='somepic'/>
-                <Card picture='somepic'/>
-                <Card picture='somepic'/>
-                <Card picture='somepic'/>
-                <Card picture='somepic'/>
-                <Card picture='somepic'/>
-                <Card picture='somepic'/>
-                <Card picture='somepic'/>
+                <Card picture={menewood}/>
+                <Card picture={menewood}/>
+                <Card picture={menewood}/>
+                <Card picture={menewood}/>
+                <Card picture={menewood}/>
+                <Card picture={menewood}/>
+                <Card picture={menewood}/>
+                <Card picture={menewood}/>
+                <Card picture={menewood}/>
+                <Card picture={menewood}/>
+                <Card picture={menewood}/>
+                <Card picture={menewood}/>
+                <Card picture={menewood}/>
               </div>
             </div>
           </div>

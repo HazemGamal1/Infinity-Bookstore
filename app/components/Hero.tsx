@@ -25,7 +25,6 @@ const Hero = () => {
       setData(response.data);
       setTitle(response.data.title)
       setImage(response.data.picture)
-      console.log(response.data);
       setError('');
     } catch (error) {
       setError('Error fetching data');
@@ -59,7 +58,7 @@ const Hero = () => {
             </div> 
             <div className='pt-8'>
             {data && 
-                  redirect('/book')
+                  redirect('/ironFlame')
               }
              {error && (
               <div className='text-center'>

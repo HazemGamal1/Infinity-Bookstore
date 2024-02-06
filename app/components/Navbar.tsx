@@ -52,7 +52,7 @@ const Navbar = () => {
         {navVisible && 
             <div className='absolute h-max z-10 flex flex-col w-full bg-white text-black p-4'>
                 <div className=' sticky top-0 flex pt-2 bg-white flex-col gap-6 justify-center  h-max w-full'>
-                    <p className='hover:text-hover-color cursor-pointer'>Books</p>
+                    <Link href="/browse"><p className='hover:text-hover-color cursor-pointer'>Books</p></Link>
                     <p className='hover:text-hover-color cursor-pointer'>Offers</p>
                     <p className='hover:text-hover-color cursor-pointer'>New Arrivals</p>
                     <p className='hover:text-hover-color cursor-pointer'>Search</p> 

@@ -19,6 +19,10 @@ export default function Home() {
         <Hero />
         <div className="mt-8">
           <BestSellers />
+          <BestSellers />
+          <BestSellers />
+          <BestSellers />
+          <BestSellers />
         </div>
           <Footer />
       </div>

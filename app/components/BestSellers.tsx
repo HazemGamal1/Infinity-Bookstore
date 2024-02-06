@@ -8,7 +8,7 @@ const BestSellers = () => {
     [
       {
         name: "Jujutsu kaisen ",
-        image: "/jujutsu.jpg",
+        image: "/bookCovers/king.webp",
         type: "novel",
         rating: 3.9,
         price: 200
@@ -22,7 +22,7 @@ const BestSellers = () => {
       },
       {
         name: "Cruel Price",
-        image: "/the-cruel-prince.jpg",
+        image: "/menewood.webp",
         type: "novel",
         rating: 3.7,
         price: 200
@@ -52,14 +52,14 @@ const BestSellers = () => {
   )
   return (
     <div>
-        <div className='w-full text-center '>
-        <h1 className='font-bold mb-3 lg:text-3xl'>Best Sellers</h1>
+        <div className='w-full lg:max-w-screen-2xl p-4 mx-auto'>
+          <h1 className='font-bold mb-3 lg:text-3xl'>Best Sellers</h1>
         </div>
         <div className='grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-6 gap-4 lg:max-w-screen-2xl p-4 mx-auto'>
-          {/* {books ?
+          {books ?
           books.map((book) => {
             return <Card name={book.name} image={book.image} type={book.type} price={book.price} rating={book.rating}/>
-          }): <div></div>} */}
+          }): <div></div>}
         </div>
     </div>
   )
