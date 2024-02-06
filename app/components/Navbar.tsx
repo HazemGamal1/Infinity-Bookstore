@@ -3,10 +3,8 @@ import Image from 'next/image'
 import { GiHamburgerMenu } from "react-icons/gi";
 import { IoMdClose } from "react-icons/io";
 import {useState} from 'react';
-import { FaSearch } from 'react-icons/fa';
-// import logo from '@/public/infinity books design.png'
 import Link from 'next/link';
-import logo from '@/app/logo black.png'
+import logo from '@/app/logoBlack.png'
 import { IoMdPersonAdd } from "react-icons/io";
 import { IoPersonSharp } from "react-icons/io5";
 import { IoHeart } from "react-icons/io5";
