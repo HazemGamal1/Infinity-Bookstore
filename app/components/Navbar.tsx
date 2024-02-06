@@ -21,7 +21,7 @@ const Navbar = () => {
             <div className='flex items-center justify-between lg:max-w-screen-2xl mx-auto'>
                 <Link href="/">
                     <div className='flex gap-1 items-center flex-shrink-0 hover:opacity-75 transition'>
-                        <h1 className='font-bold text-2xl cursor-pointer '><Image src={logo} alt="logo" width={50}/></h1>
+                        <Image src={logo} alt="logo" width={50}/>
                         <p className='font-normal text-slate-400 text-lg cursor-pointer'>Infinity</p>
                     </div>
                 </Link>
