@@ -58,7 +58,7 @@ const BestSellers = () => {
         <div className='grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-6 gap-4 lg:max-w-screen-2xl p-4 mx-auto'>
           {books ?
           books.map((book) => {
-            return <Card name={book.name} image={book.image} type={book.type} price={book.price} rating={book.rating}/>
+            return <Card name={book.name} image={book.image} type={book.type} price={book.price} rating={book.rating} key={book.name}/>
           }): <div></div>}
         </div>
     </div>
