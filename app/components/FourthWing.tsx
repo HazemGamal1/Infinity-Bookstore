@@ -33,7 +33,7 @@ const FourthWing = () => {
   }, []);
   return (
     <div className='lg:max-w-[50%] p-4 mx-auto mt-4 lg:flex lg:gap-4 lg:justify-center'>
-        <CardVariation picture={picture}/>
+        {/* <CardVariation picture={picture}/> */}
         <div className='lg:w-[50%] flex flex-col justify-between'>
             <div>
                 <div className='bg-hover-color text-white rounded-2xl p-2 mt-4 flex items-center gap-2 cursor-pointer select-none max-w-max'>

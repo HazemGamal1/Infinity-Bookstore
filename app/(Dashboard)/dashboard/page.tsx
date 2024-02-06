@@ -2,15 +2,6 @@
 import Navbar from '@/app/components/Navbar'
 import axios from 'axios';
 import React , {ChangeEvent, FormEvent, useState, useEffect} from 'react'
-import Card from '@/app/components/Card'
-import Offer from '@/app/components/Offer'
-import { IoHeart } from "react-icons/io5";
-import CardVariation from '@/app/components/CardVariation';
-import { FaShoppingCart } from "react-icons/fa";
-import { IoMdCheckmarkCircle } from "react-icons/io";
-import Footer from '@/app/components/Footer';
-import { MdSell } from "react-icons/md";
-import err from '/404.png'
 import AddBook from './components/AddBook';
 import RemoveBook from './components/RemoveBook';
 const Page = () => {

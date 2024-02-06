@@ -5,10 +5,10 @@ import { IoHeart } from "react-icons/io5";
 import CardVariation from '@/app/components/CardVariation';
 import { FaShoppingCart } from "react-icons/fa";
 import { MdSell } from "react-icons/md";
+import { StaticImageData } from 'next/image';
 
 interface propTypes{
-    title: string,
-    image: string
+    params: {title: string, image: StaticImageData}
 }
 const Page = (props : propTypes) => {
     const[wishList, setWishList] = useState(false);
@@ -16,7 +16,7 @@ const Page = (props : propTypes) => {
     <div className='relative h-full'>
         <Navbar />
             <div className='lg:max-w-[50%] p-4 mx-auto mt-4 lg:flex lg:gap-4 lg:justify-center pt-12 h-full'>
-                <CardVariation picture={props.image}/>
+                {/* <CardVariation picture={props.params.image}/> */}
                 <div className='lg:w-[50%] flex flex-col justify-between'>
                     <div>
                         <div className='bg-hover-color text-white rounded-2xl p-2 mt-4 flex items-center gap-2 cursor-pointer select-none max-w-max' onClick={() => setWishList(!wishList)}>

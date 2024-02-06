@@ -1,7 +1,4 @@
 import React from 'react'
-import logo from '@/app/logo black.png'
-import Image from 'next/image'
-import Link from 'next/link'
 
 const Page = () => {
   return (

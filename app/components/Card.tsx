@@ -11,6 +11,7 @@ interface propTypes{
   type: string,
   rating: number,
   price: number
+  
 }
 const Card = (props :propTypes) => {
     const [showInfo, setShowInfo] = useState(false);

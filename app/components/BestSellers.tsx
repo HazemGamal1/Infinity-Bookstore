@@ -2,7 +2,6 @@ import React from 'react'
 import Link from 'next/link';
 import Card from '../components/Card';
 import { useState } from 'react';
-import image from '@/public/jujutsu.jpg'
 const BestSellers = () => {
   const[books, setBooks] = useState(
     [
