@@ -56,7 +56,7 @@ const Navbar = () => {
                     <p className='hover:text-hover-color cursor-pointer'>Search</p> 
                     <Link href="/dashboard"><p className='hover:text-hover-color cursor-pointer'>Dashboard</p></Link>
                     <div className='flex justify-between mt-1 gap-2'>
-                        <div className='w-full'>
+                        <div className='w-[50%]'>
                             <Link href="/login">
                                 <div className='flex rounded-lg cursor-pointer bg-slate-300 justify-center py-2 gap-2 items-center'>
                                     <IoPersonSharp className="text-xl"/>
@@ -64,9 +64,13 @@ const Navbar = () => {
                                 </div>
                             </Link>
                         </div>
-                        <div className='flex rounded-lg cursor-pointer bg-slate-300 py-2  justify-center gap-2 items-center w-full'>
-                            <IoMdPersonAdd className="text-xl"/>
-                            <p>Sign Up</p>
+                        <div className='w-[50%]'>
+                            <Link href="/sign-up">
+                                <div className='flex rounded-lg cursor-pointer bg-slate-300 py-2  justify-center gap-2 items-center w-full'>
+                                    <IoMdPersonAdd className="text-xl"/>
+                                    <p>Sign Up</p>
+                                </div>
+                            </Link>
                         </div>
                     </div>
                 </div>

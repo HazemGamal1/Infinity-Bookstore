@@ -77,19 +77,20 @@ const Page = () => {
         }
             <div className='2xl:w-full'>
               <div className='w-full grid grid-cols-2 md:grid-cols-3 2xl:grid-cols-5 gap-4'>
-                {/* <Card params={menewood}/>
-                <Card picture={menewood}/>
-                <Card picture={menewood}/>
-                <Card picture={menewood}/>
-                <Card picture={menewood}/>
-                <Card picture={menewood}/>
-                <Card picture={menewood}/>
-                <Card picture={menewood}/>
-                <Card picture={menewood}/>
-                <Card picture={menewood}/>
-                <Card picture={menewood}/>
-                <Card picture={menewood}/>
-                <Card picture={menewood}/> */}
+                <Card/>
+                <Card/>
+                <Card/>
+                <Card/>
+                <Card/>
+                <Card/>
+                <Card/>
+                <Card/>
+                <Card/>
+                <Card/>
+                <Card/>
+                <Card/>
+                <Card/>
+                
               </div>
             </div>
           </div>
