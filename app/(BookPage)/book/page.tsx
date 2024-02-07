@@ -6,11 +6,59 @@ import CardVariation from '@/app/components/CardVariation';
 import { FaShoppingCart } from "react-icons/fa";
 import { MdSell } from "react-icons/md";
 import { StaticImageData } from 'next/image';
-
+import Footer from '@/app/components/Footer';
+import Card from '@/app/components/Card';
+import Link from 'next/link';
 interface propTypes{
     params: {title: string, image: StaticImageData}
 }
 const Page = (props : propTypes) => {
+    const[books, setBooks] = useState(
+        [
+          {
+            name: "Jujutsu kaisen ",
+            image: "/bookCovers/king.webp",
+            type: "novel",
+            rating: 3.9,
+            price: 200
+          },
+          {
+            name: "Menewood",
+            image: "/menewood.webp",
+            type: "novel",
+            rating: 4.1,
+            price: 200
+          },
+          {
+            name: "Cruel Price",
+            image: "/menewood.webp",
+            type: "novel",
+            rating: 3.7,
+            price: 200
+          },
+          {
+            name: "Iron Flame",
+            image: "/ironFlame.jpg",
+            type: "novel",
+            rating: 4.3,
+            price: 200
+          },
+          {
+            name: "Menewood",
+            image: "/uglyLov.jpg",
+            type: "novel",
+            rating: 3.5,
+            price: 200
+          },
+          {
+            name: "It Ends With Us",
+            image: "/bookCovers/itEndsWithUs.jpg",
+            type: "novel",
+            rating: 3.5,
+            price: 200
+          },
+        ]
+      )
     const[wishList, setWishList] = useState(false);
   return (
     <div className='relative h-full'>
@@ -40,6 +88,19 @@ After learning that Oak is the heir to Faerie, Jude must keep her younger brothe
                     </div>
                 </div>
             </div>
+            <div className='max-w-screen-2xl mx-auto'>
+                <h1 className='font-bold text-2xl my-4'>Similar Books</h1>
+                <div className='flex gap-6'>
+                    <Link href="/book "><div className='grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-6 gap-4 lg:max-w-screen-2xl p-4 mx-auto'>
+                        {books ?
+                        books.map((book) => {
+                            return <Card name={book.name} image={book.image} type={book.type} price={book.price} rating={book.rating} key={book.name}/>
+                        }): <div></div>}
+                        </div>
+                    </Link>
+                </div>
+            </div>
+            <Footer />
             {wishList && (
                 <div className='py-4 px-3 fixed bottom-2 left-2 bg-white shadow-xl rounded-lg flex gap-2 h-max'>
                     <h1 className='bg-gradient-to-r to-rose-500 from-rose-600 font-bold bg-clip-text text-transparent'>Item Added To Wishlist </h1>

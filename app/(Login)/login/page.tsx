@@ -1,10 +1,10 @@
 import React from 'react'
-import logo from '@/app/logoBlack.png'
+import logo from '@/public/logo.png'
 import Link from 'next/link'
 import Image from 'next/image'
 const Page = () => {
   return (
-    <div className='grid w-screen h-screen place-content-center'>
+    <div className='grid w-screen h-screen place-content-center hero'>
         <Link href="/">
             <div className='font-bold text-2xl cursor-pointer absolute left-2 bottom-2'><Image src={logo} alt="logo" width={50}/></div>
         </Link>

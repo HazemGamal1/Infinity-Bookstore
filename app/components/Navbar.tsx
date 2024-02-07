@@ -37,7 +37,7 @@ const Navbar = () => {
                                 <h1 className=''>Browse All</h1>
                         </div>
                     </Link>
-                    <IoCart className="text-3xl hover:text-hover-color duration-300 cursor-pointer"/>
+                    <Link href="/cart"><IoCart className="text-3xl hover:text-hover-color duration-300 cursor-pointer"/></Link>
                     <IoHeart className="text-3xl hover:text-rose-600 cursor-pointer"/>
                     <Link href="/dashboard"><FaRegEdit className="text-3xl cursor-pointer"/></Link>
                     {/* <p className='hover:opacity-80 cursor-pointer flex items-center gap-2'><FaSearch className="text-2xl cursor-pointer"/></p>  */}

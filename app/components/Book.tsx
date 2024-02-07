@@ -19,6 +19,7 @@ const Book = (props:PropTypes) => {
                     <h1 className='text-md lg:text-2xl font-extrabold'>{props.title} is available </h1>
                     <FaCheck className="text-md lg:text-2xl"/>
                 </div>
+                
              </div>
     </div>
   )

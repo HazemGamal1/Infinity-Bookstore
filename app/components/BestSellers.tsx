@@ -21,7 +21,7 @@ const BestSellers = () => {
       },
       {
         name: "Cruel Price",
-        image: "/menewood.webp",
+        image: "/bookCovers/ardZikola.jpg",
         type: "novel",
         rating: 3.7,
         price: 200
