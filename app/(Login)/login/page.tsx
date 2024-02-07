@@ -6,7 +6,7 @@ import logo from '@/app/logoBlack.png'
 const Page = () => {
   return (
     <div className='grid w-screen h-screen place-content-center'>
-      <Link href="/">
+      {/* <Link href="/">
         <div className='font-bold text-2xl cursor-pointer absolute left-2 bottom-2'><Image src={logo} alt="logo" width={50}/></div>
       </Link>
       <div className='shadow-2xl bg-[#FFF] pt-8 pb-6 px-8 relative rounded-2xl lg:w-[25vw] mx-2'>
@@ -28,7 +28,7 @@ const Page = () => {
         <div className='mt-6 text-sm lg:text-lg'>
           <p>Don't have an Account? <span className='cursor-pointer text-hover-color'><Link href="/sign-up">Sign Up</Link></span></p>
         </div>
-      </div>
+      </div> */}
     </div>
   )
 }
