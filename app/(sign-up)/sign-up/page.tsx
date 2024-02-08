@@ -8,7 +8,7 @@ const Page = () => {
     <Link href="/">
         <div className='font-bold text-2xl cursor-pointer absolute left-2 bottom-2'><Image src={logo} alt="logo" width={50}/></div>
     </Link>
-      <div className='shadow-2xl bg-[#FFF] pt-8 pb-6 px-8 relative rounded-2xl lg:w-[25vw] mx-2'>
+      <div className='shadow-2xl bg-[#FFF] pt-8 pb-6 px-8 relative rounded-2xl lg:w-[50vw] : xl:w-[25vw] mx-2'>
         <div className='mb-6'>
             <div className='mb-4'>
                 <h1 className='mb-2 font-bold text-sm lg:text-lg'>Username \ Account</h1>

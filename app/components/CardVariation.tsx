@@ -12,7 +12,7 @@ const Card = () => {
   return (
     <div>
         <div className='grid place-content-center relative rounded-lg cursor-pointer overflow-hidden ' onMouseEnter={() => setShowInfo(true)} onMouseLeave={() => setShowInfo(false)}>
-            <Image src={king} alt="book cover"  width={450} height={350} quality={100}/>
+            <Image src={king} alt="book cover"  width={450} height={350} quality={100} layout='fit'/>
         </div>
     </div>
   )
