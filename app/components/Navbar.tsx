@@ -54,6 +54,7 @@ const Navbar = () => {
                     <p className='hover:text-hover-color cursor-pointer'>Offers</p>
                     <p className='hover:text-hover-color cursor-pointer'>New Arrivals</p>
                     <p className='hover:text-hover-color cursor-pointer'>Search</p> 
+                    <Link href="/cart">Cart</Link>
                     <Link href="/dashboard"><p className='hover:text-hover-color cursor-pointer'>Dashboard</p></Link>
                     <div className='flex justify-between mt-1 gap-2'>
                         <div className='w-[50%]'>
